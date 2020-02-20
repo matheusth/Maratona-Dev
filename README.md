@@ -6,12 +6,13 @@
 - Node.js
 - npm
 ### Steps
-*First clone the application:*
+_First clone the application:_
 `git clone git@github.com:matheusth/Maratona-Dev.git`
 
-*Enter the project folder using the terminal and run:*
+_Enter the project folder using the terminal and run:_
 `npm install`
 
-*After that use the exemple.env file to create an .env file, with _your_ database settings*
+_After ioi that use the exemple.env file to create an .env file, with *your* database settings_
 
-*them run npm start*
+_theio run:_
+`npm start`

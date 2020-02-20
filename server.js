@@ -24,7 +24,7 @@ app.post('/', (req, res) => {
     const { name, email, bloodType } = req.body;
 
     if (!name || !email || !bloodType) {
-        return res.send("<h1>Erro 401</h1><h3>Todos os campos são obrigatorios</h3>");
+        return res.send("<h1>Erro 401</h1><h3> Todos os campos são obrigatorios</h3>");
     }
     const query = `insert into donors ("name","email","bloodType") VALUES 
     ($1,$2,$3)`
