@@ -1,4 +1,4 @@
-require('dotenv').configure();
+require('dotenv').config();
 const express = require('express');
 const db = require('./util/dbConnection');
 const app = express();
@@ -11,7 +11,7 @@ nunjucks.configure("./", {
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 
-app.get('/', (_, res) => {
+app.get('/pages', (_, res) => {
     db.query("select * from donors", (err, result) => {
         if (err) return res.send(`<h1>Erro 500</h1><h3>${err}</h3>`);
         const donors = result.rows;
